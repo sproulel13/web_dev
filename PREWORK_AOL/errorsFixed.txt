@@ -1,0 +1,9 @@
+- fixed formatting in 'About Boo' (added paragraphs)
+- fixed broken image link
+- fixed broken link in bio
+- fixed list (added missing <li> tags)
+- added alt attribute to images
+- added <h1> tags to header
+- fixed incorrect javascript link (changed errors.js to logic.js)
+- fixed incorrect labling of colors on buttons
+- fixed undefined errors in logic.js (added " " when missing)

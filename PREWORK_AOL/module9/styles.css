@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#red {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+#green {
+  color: green;
+}
+
+#big {
+  font-size: 5em;
+
+}
+
+#tiny {
+  font-size: 0.75em;
+}
+
+#center {
+  text-align: center;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#changeFont {
+  font-family: "Courier new", monospace;
+}
+
+#combo {
+  font-size: 3em;
+  color: orange;
+  font-weight: bold;
+}
+
+.styledFont {
+  color: indigo;
+  text-shadow: 3px 2px lavender;
+  letter-spacing: 3px;
+}
+
+#styledImage {
+  border-style: double;
+  border-radius: 5px;
+  border-width: 6px;
+  border-color: red;
+
+
+}

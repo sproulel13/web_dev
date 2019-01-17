@@ -1,0 +1,45 @@
+1.NoSQL:
+A NoSQL database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases.NoSQL databases are increasingly used in big data and real-time web applications.
+
+2.D3:
+D3.js is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of the widely implemented SVG, HTML5, and CSS standards.
+
+3.Angular:
+AngularJS (also written as Angular.js) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. 
+
+4.Typescript:
+TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language.
+
+5.Bootstrap:
+Bootstrap is a free and open-source front-end framework for developing websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. 
+
+6.Materialize:
+Materialize is a responsive front-end component library similar to Bootstrap. It offers everything that Bootstrap has to offer, but the difference is that Materialize follows material design principles. 
+
+7.React:
+React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
+
+8.Django:
+Django is a Python-based free and open-source web framework, which follows the model-view-template architectural pattern.Django's primary goal is to ease the creation of complex, database-driven websites. 
+
+9.Celery:
+Celery is an open source asynchronous task queue or job queue which is based on distributed message passing. While it supports scheduling, its focus is on operations in real time.
+
+10.Postgres:
+Postgre is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance. It can handle workloads ranging from small single-machine applications to large Internet-facing applications (or for data warehousing) with many concurrent users; on macOS Server, PostgreSQL is the default database; and it is also available for Microsoft Windows and Linux (supplied in most distributions).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
