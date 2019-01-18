@@ -10,10 +10,15 @@ var padWidth = 75;
 var padX = (canvas.width-padWidth)/2;
 var keyRight = false;
 var keyLeft = false;
+var brickRowCount = 3;
+var brickColumnCount = 5;
+var brickWidth = 75;
+var brickHeight = 20;
+var brickPadding = 10;
 
 document.addEventListener("keydown", keyDownHandler);
 document.addEventListener("keyup", keyUpHandler);
-
+//key handler
 function keyDownHandler(e) {
   if(e.keyCode == 39){
     keyRight = true;
@@ -31,7 +36,7 @@ function keyUpHandler(e) {
     keyLeft = false;
   }
 }
-
+//draws the ball
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRad, 0, Math.PI*2);
@@ -39,7 +44,7 @@ function drawBall() {
   ctx.fill();
   ctx.closePath();
 }
-
+//draws the paddle
 function drawPad(){
   ctx.beginPath();
   ctx.rect(padX, canvas.height-padHeight, padWidth, padHeight);
@@ -48,7 +53,7 @@ function drawPad(){
   ctx.closePath();
 
 }
-
+//game logic
 function draw(){
   ctx.clearRect(0,0, canvas.width, canvas.height);
   drawBall();
@@ -57,10 +62,15 @@ function draw(){
     dy = -dy;
   }
   else if (y + dy > canvas.height-ballRad){
-    alert("Game Over!");
-    document.location.reload();
+    if(x > padX && x < padX + padWidth){
+      dy = -dy;
+    }
+    else {
+        alert("Game Over!");
+        document.location.reload();
     x = canvas.width/2
     y = canvas.height-30
+    }
   }
 
   if (x + dx < ballRad || x + dx > canvas.width-ballRad) {
