@@ -15,9 +15,35 @@ var brickColumnCount = 5;
 var brickWidth = 75;
 var brickHeight = 20;
 var brickPadding = 10;
+var brickOffsetTop = 30;
+var brickOffsetLeft = 30;
+
+var bricks = [];
+for (c=0; c<brickColumnCount; c++){
+  bricks[c] = [];
+  for (r=0; r<brickRowCount; r++){
+    bricks[c][r]={x:0,y:0}
+  }
+}
 
 document.addEventListener("keydown", keyDownHandler);
 document.addEventListener("keyup", keyUpHandler);
+
+function drawBricks(){
+  for(c=0; c<brickColumnCount; c++){
+    for(r=0; r<brickRowCount; r++){
+      bricks[c][r].x=0
+      bricks[c][r].y=0
+      ctx.beginPath();
+      ctx.rect(0,0,brickWidth,brickHeight);
+      ctx.fillStyle = 'blue';
+      ctx.fill();
+      ctx.closePath();
+    }
+  }
+
+}
+
 //key handler
 function keyDownHandler(e) {
   if(e.keyCode == 39){
@@ -58,6 +84,7 @@ function draw(){
   ctx.clearRect(0,0, canvas.width, canvas.height);
   drawBall();
   drawPad();
+  drawBricks();
   if (y + dy < ballRad) {
     dy = -dy;
   }
