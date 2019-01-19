@@ -7,8 +7,6 @@ var width = 150;
 var color = "blue";
 
 
-var opacity = 1;
-
 
 document.getElementById("button1").onclick = boxSize;
 
@@ -18,7 +16,7 @@ function  boxSize (){
     height = 300;
     width = 150;
     width = width + i
-    document.getElementById("box").style = "width:" + width.toString()+"px;" + "height:"+width.toString()+"px;" +"background-color:orange";
+    document.getElementById("box").style = `width: ${width} px; height: ${width}px; background-color:orange";
 
   }
 }
@@ -34,7 +32,10 @@ function boxColor (){
 document.getElementById("button3").onclick = boxFade;
 
 function boxFade (){
-  document.getElementById('box').style="height:150px; width:150px; background-color:blue; margin:25px"
+  for (let i=1; i > 0; i -= .001){
+    document.getElementById('box').style=`height:150px; width:150px; background-color:orange; margin:25px; opacity:${i}`
+    console.log(i)
+  }
 }
 
 
