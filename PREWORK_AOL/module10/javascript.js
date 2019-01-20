@@ -16,7 +16,7 @@ function  boxSize (){
     height = 300;
     width = 150;
     width = width + i
-    document.getElementById("box").style = `width: ${width} px; height: ${width}px; background-color:orange";
+    document.getElementById("box").style = `width: ${width} px; height: ${width}px; background-color:orange`;
 
   }
 }
